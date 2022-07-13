@@ -12,11 +12,30 @@ function IconList() {
         <BiWindows/>,
         <BsEnvelopeOpen/>,
     ]
+const oneIcon ={
+  marginTop:'0.9em',
+  backgroundColor:'#454e56',
+  padding: '18px',
+  borderRadius: '50px',
+  "&:hover":{
+    backgroundColor:' #27AE60'
+  }
+}   
 const iconList= icons.map((icon)=>
-    <li>{icon}</li>)
+    <li style={oneIcon} className='hover:bg-[#27AE60]'>{icon}</li>)
+
+const iconStyle={
+  paddingLeft:'3em',
+  paddingTop:'5em',
+  fontSize:'2em',
+  color:'#b2becd',
+  justifyContent:'space-around',
+  
+
+}    
   return (
     <div>
-        <ul>{iconList}</ul>
+        <ul style={iconStyle}>{iconList}</ul>
     </div>
   )
 }

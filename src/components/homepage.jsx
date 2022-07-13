@@ -18,8 +18,8 @@ export default function Homepage() {
                     I would like to be a part of an organization where I could use and enhance my knowledge and talent for the development of both the organization and myself.</p>
             </div>
         </div>
-        <div className="h-4/5 w-1/5">
-         <div className="div">{IconList}</div>
+        <div className="h-4/5 w-1/5 flex items-center justify-center">
+         <IconList/>
         </div>
     </div>
   )
