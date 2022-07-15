@@ -14,15 +14,14 @@ function IconList() {
     ]
 const oneIcon ={
   marginTop:'0.9em',
-  backgroundColor:'#454e56',
   padding: '18px',
   borderRadius: '50px',
-  "&:hover":{
-    backgroundColor:' #27AE60'
-  }
+  
+
 }   
 const iconList= icons.map((icon)=>
-    <li style={oneIcon} className='hover:bg-[#27AE60]'>{icon}</li>)
+  
+  <li style={oneIcon} className=' bg-[#454e56] hover:bg-[#27AE60] '>{icon}</li>)
 
 const iconStyle={
   paddingLeft:'3em',
